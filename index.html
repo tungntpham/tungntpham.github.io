@@ -1,119 +1,66 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  box-sizing: border-box;
-}
+  <link rel="stylesheet" type="text/css" href="stylesheets/screen.css">
+  <title>Tung Pham</title>
 
-/* Add a gray background color with some padding */
+  <meta name="viewport" content="width=device-width">
+  <meta charset="UTF-8">
+  <style>
 body {
-  font-family: Arial;
-  padding: 20px;
-  background: #f1f1f1;
+  background: #555;
 }
 
-/* Header/Blog Title */
-.header {
-  padding: 30px;
-  font-size: 40px;
-  text-align: center;
+header {
+  height: 200px;
+}
+
+.content {
+  max-width: 500px;
+  margin: auto;
   background: white;
+  padding: 10px;
 }
 
-/* Create two unequal columns that floats next to each other */
-/* Left column */
-.leftcolumn {   
-  float: left;
-  width: 75%;
+.avatar {
+  border-radius: 50% 
 }
 
-/* Right column */
-.rightcolumn {
-  float: left;
-  width: 25%;
-  padding-left: 20px;
-}
-
-/* Fake image */
-.fakeimg {
-  background-color: #aaa;
-  width: 100%;
-  padding: 20px;
-}
-
-/* Add a card effect for articles */
-.card {
-   background-color: white;
-   padding: 20px;
-   margin-top: 20px;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-/* Footer */
-.footer {
-  padding: 20px;
-  text-align: center;
-  background: #ddd;
-  margin-top: 20px;
-}
-
-/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 800px) {
-  .leftcolumn, .rightcolumn {   
-    width: 100%;
-    padding: 0;
-  }
-}
 </style>
 </head>
-<body>
 
-<div class="header">
-  <h2>Tung's blog</h2>
-</div>
+<body class="content">
+  <header>
+      <h1 align="center">TUNG <span style="font-family:'Brush Script MT', cursive">N. T.</span> PHAM</h1>
 
-<div class="row">
-  <div class="leftcolumn">
-    <div class="card">
-      <h2>First Entry</h2>
-      <h5>Add link to algorithm visualiser, 6 Feb, 2022</h5>
-      <div class="fakeimg" style="height:200px;">Image</div>
-      <p><a href="https://tungntpham.github.io/AlgoVisualiser/">Algorithms Visualiser</a></p>
-	  <p><a href="./entries/entry1.html">First Entry</a></p>
-    </div>
+    <a><img src="images/avatar.jpg" width="100" height="100" class="avatar" align="left"></a>
+
+    <p>I'm a software engineer at Sky Adtech. I'm interested in pretty much all aspects of software development and always looking out to further my knowledge in each aspect.</p>
+  </header>
+  <div>
+  <article>
+    <h2 id="profession">Software Engineer at Sky</h2>
+    <p>I joined Sky Adtech team in June 2022 working on building a high performance and high available Ad decisioning proxy with 500,000 RPS requirements</p>
+  </article>
+  <article>
+    <h2 id="family">Family man</h2>
+    <p>I'm married man and enjoy spending my free time with my family.</p>
+  </article>
+  <article>
+    <h2 id="interest">Interests</h2>
+    <p>I have always had a broad interest in software and how to build good one. This includes all but not excludively the followings:
+      <ul>
+          <li>Software development methodology (i.e. Agile, TDD/BDD, DDD...)</li>
+          <li>Architecture</li>
+          <li>Design Patterns</li>
+          <li>Infrastructure</li>
+          <li>Security</li>
+          <li>CI/CD</li>
+          <li>Testing</li>
+      </ul>
+    </p>
+    <p>I'm a big believer in clean design. To me, anything that is clean is easier to work with, to maintain and extend and overall make the software development faster and less error proned.
+  </article>
   </div>
-  <div class="rightcolumn">
-    <div class="card">
-      <h2>About Me</h2>
-      <div class="fakeimg" style="height:100px;">Image</div>
-      <p>Software Engineer for life</p>
-    </div>
-    <div class="card">
-      <h3>Popular Post</h3>
-      <p><a href="./entries/entry1.html">First Entry</a></p>
-    </div>
-	<div class="card">
-	  <h3>Projects</h2>
-	  <p><a href="https://tungntpham.github.io/AlgoVisualiser/">Algorithms Visualiser</a></p>
-	</div>
-    <div class="card">
-      <h3>Follow Me</h3>
-      <p><a href="https://www.linkedin.com/in/tung-pham-44540660/">Linkedin</a></p>
-    </div>
-  </div>
-</div>
-
-<div class="footer">
-  <h2>Footer</h2>
-</div>
-
 </body>
 </html>
